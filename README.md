@@ -25,16 +25,16 @@ matploblib==3.3.1
 Maximal cliques of the training part of each dataset should be generated using the code provided in [here](https://github.com/darrenstrash/quick-cliques).
 
 
-## Training Commands
+## Running
 
 #### Examples:
 
-* To train **TGR-Clique** with fb-messages dataset in transductive training, sampling 10 length-2 walks for every node:
+* To run **TGR-Clique** on fb-messages dataset in transductive training, sampling 10 length-2 walks for every node:
 ```bash
 python main.py -d fb_msg --mode t --clq_file data/ml_fb_msg_train2.cliques --num_walk 10 --len_walk 2 
 ```
 
-* To train **TGR-Clique** with fb-messages dataset in inductive training, sampling 10 length-2 walks for every node:
+* To run **TGR-Clique** on fb-messages dataset in inductive training, sampling 10 length-2 walks for every node:
 
 ```bash
 python main.py -d fb_msg --mode i --clq_file data/ml_fb_msg_train2_ind.cliques --num_walk 10 --len_walk 2 
