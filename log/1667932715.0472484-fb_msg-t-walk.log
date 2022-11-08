@@ -1,0 +1,9 @@
+2022-11-08 13:38:35,047 - root - INFO - Create log file at log/1667932715.0472484-fb_msg-t-walk.log
+2022-11-08 13:38:35,047 - root - INFO - Command line executed: python main.py -d fb_msg --mode t --clq_file data/ml_fb_msg_train2.cliques --num_walk 10 --len_walk 2
+2022-11-08 13:38:35,047 - root - INFO - Full args parsed:
+2022-11-08 13:38:35,047 - root - INFO - Namespace(agg='walk', attn_agg_method='attn', attn_mode='prod', attn_n_head=2, bs=64, clq_file='data/ml_fb_msg_train2.cliques', cpu_cores=1, data='fb_msg', drop_out=0.1, gpu=0, len_walk=2, lr=0.0001, mode='t', n_epoch=50, n_layer=2, ngh_cache=False, num_walk=10, seed=0, time='time', tolerance=0.001, verbosity=1, walk_linear_out=False, walk_n_head=8, walk_pool='attn')
+2022-11-08 13:38:35,047 - root - INFO - Create checkpoint directory ./saved_checkpoints/1667932715.0472484-fb_msg-t-walk/
+2022-11-08 13:38:35,047 - root - INFO - Create best model directory ./best_models/1667932715.0472484-fb_msg-t-walk/
+2022-11-08 13:38:35,127 - root - INFO - Transductive training...
+2022-11-08 13:39:30,965 - module - INFO - node dim: 100, edge dim: 100, time dim: 104
+2022-11-08 13:39:30,965 - module - INFO - Using time encoding

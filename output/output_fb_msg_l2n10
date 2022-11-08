@@ -1,0 +1,63 @@
+INFO:root:Create log file at log/1667933818.0369575-fb_msg-t-walk.log
+INFO:root:Command line executed: python main.py -d fb_msg --mode t --clq_file data/ml_fb_msg_train2.cliques --num_walk 10 --len_walk 2 --gpu 1
+INFO:root:Full args parsed:
+INFO:root:Namespace(agg='walk', attn_agg_method='attn', attn_mode='prod', attn_n_head=2, bs=64, clq_file='data/ml_fb_msg_train2.cliques', cpu_cores=1, data='fb_msg', drop_out=0.1, gpu=1, len_walk=2, lr=0.0001, mode='t', n_epoch=50, n_layer=2, ngh_cache=False, num_walk=10, seed=0, time='time', tolerance=0.001, verbosity=1, walk_linear_out=False, walk_n_head=8, walk_pool='attn')
+INFO:root:Create checkpoint directory ./saved_checkpoints/1667933818.0369575-fb_msg-t-walk/
+INFO:root:Create best model directory ./best_models/1667933818.0369575-fb_msg-t-walk/
+INFO:root:Transductive training...
+INFO:module:node dim: 100, edge dim: 100, time dim: 104
+INFO:module:Using time encoding
+INFO:root:num of training instances: 43214
+INFO:root:num of batches per epoch: 676
+INFO:root:start 0 epoch
+INFO:root:epoch: 0:
+INFO:root:epoch mean loss: 0.15854878975236036
+INFO:root:train acc: 0.9721477440828402, val acc: 0.49838187702265374
+INFO:root:train auc: 0.9878048868574334, val auc: 0.966938151743977
+INFO:root:train ap: 0.9867735588598279, val ap: 0.9696712915714257
+INFO:root:start 1 epoch
+INFO:root:epoch: 1:
+INFO:root:epoch mean loss: 0.06536452401620226
+INFO:root:train acc: 0.9892173631656804, val acc: 0.49838187702265374
+INFO:root:train auc: 0.9999989165356878, val auc: 0.9618176914778858
+INFO:root:train ap: 0.9999989384238558, val ap: 0.9677738019681948
+INFO:root:start 2 epoch
+INFO:root:epoch: 2:
+INFO:root:epoch mean loss: 0.06566221482143401
+INFO:root:train acc: 0.9904539571005917, val acc: 0.5226537216828478
+INFO:root:train auc: 0.9999931380593565, val auc: 0.954277238403452
+INFO:root:train ap: 0.9999934286340864, val ap: 0.9524269150704415
+INFO:root:start 3 epoch
+INFO:root:epoch: 3:
+INFO:root:epoch mean loss: 0.06307748647715451
+INFO:root:train acc: 0.9896218565088757, val acc: 0.5725997842502697
+INFO:root:train auc: 0.9999996388452292, val auc: 0.9716073354908307
+INFO:root:train ap: 0.9999996444014565, val ap: 0.9792453872104986
+INFO:root:start 4 epoch
+INFO:root:epoch: 4:
+INFO:root:epoch mean loss: 0.06175242831166801
+INFO:root:train acc: 0.9880269970414202, val acc: 0.5485436893203883
+INFO:root:train auc: 0.9999458267843935, val auc: 0.967062207838907
+INFO:root:train ap: 0.9999456398167278, val ap: 0.9735559835423311
+INFO:root:start 5 epoch
+INFO:root:epoch: 5:
+INFO:root:epoch mean loss: 0.038146129914853645
+INFO:root:train acc: 0.9930427144970414, val acc: 0.5
+INFO:root:train auc: 0.9996977134569157, val auc: 0.9615120460266091
+INFO:root:train ap: 0.9996990500042714, val ap: 0.9677179401798307
+INFO:root:start 6 epoch
+INFO:root:epoch: 6:
+INFO:root:epoch mean loss: 0.07244994272638351
+INFO:root:train acc: 0.9888706545857988, val acc: 0.5309061488673139
+INFO:root:train auc: 0.9999985553809172, val auc: 0.9642718446601943
+INFO:root:train ap: 0.9999986403585103, val ap: 0.970431062105918
+INFO:root:No improvment over 3 epochs, stop training
+INFO:root:Loading the best model at epoch 3
+INFO:root:Loaded the best model at epoch 3 for inference
+INFO:root:Test statistics: t all nodes -- acc: 0.5181229773462783, auc: 0.9819003955411723, ap: 0.9863417707695797
+INFO:root:Saving TGR_Clique model ...
+INFO:root:TGR_Clique model saved
+1****clique_list_done
+2***clq_adj_list_done
+train:----635.8614706993103 seconds----
+test:----15.69806981086731 seconds----

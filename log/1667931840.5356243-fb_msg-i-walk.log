@@ -1,0 +1,50 @@
+2022-11-08 13:24:00,535 - root - INFO - Create log file at log/1667931840.5356243-fb_msg-i-walk.log
+2022-11-08 13:24:00,535 - root - INFO - Command line executed: python main.py -d fb_msg --mode i --clq_file data/ml_fb_msg_train2_ind.cliques --num_walk 10 --len_walk 2 --gpu 1
+2022-11-08 13:24:00,535 - root - INFO - Full args parsed:
+2022-11-08 13:24:00,536 - root - INFO - Namespace(agg='walk', attn_agg_method='attn', attn_mode='prod', attn_n_head=2, bs=64, clq_file='data/ml_fb_msg_train2_ind.cliques', cpu_cores=1, data='fb_msg', drop_out=0.1, gpu=1, len_walk=2, lr=0.0001, mode='i', n_epoch=50, n_layer=2, ngh_cache=False, num_walk=10, seed=0, time='time', tolerance=0.001, verbosity=1, walk_linear_out=False, walk_n_head=8, walk_pool='attn')
+2022-11-08 13:24:00,536 - root - INFO - Create checkpoint directory ./saved_checkpoints/1667931840.5356243-fb_msg-i-walk/
+2022-11-08 13:24:00,536 - root - INFO - Create best model directory ./best_models/1667931840.5356243-fb_msg-i-walk/
+2022-11-08 13:24:00,611 - root - INFO - Inductive training...
+2022-11-08 13:24:00,647 - root - INFO - Sampled 189 nodes (10 %) which are masked in training and reserved for testing...
+2022-11-08 13:24:55,386 - module - INFO - node dim: 100, edge dim: 100, time dim: 104
+2022-11-08 13:24:55,386 - module - INFO - Using time encoding
+2022-11-08 13:24:57,096 - root - INFO - num of training instances: 32423
+2022-11-08 13:24:57,096 - root - INFO - num of batches per epoch: 507
+2022-11-08 13:24:57,097 - root - INFO - start 0 epoch
+2022-11-08 13:25:57,430 - root - INFO - epoch: 0:
+2022-11-08 13:25:57,430 - root - INFO - epoch mean loss: 0.4122431330544474
+2022-11-08 13:25:57,430 - root - INFO - train acc: 0.9164663461538461, val acc: 0.5
+2022-11-08 13:25:57,430 - root - INFO - train auc: 0.9689406897189349, val auc: 0.9405133928571427
+2022-11-08 13:25:57,431 - root - INFO - train ap: 0.9690256316466851, val ap: 0.9395014234664819
+2022-11-08 13:25:57,492 - root - INFO - start 1 epoch
+2022-11-08 13:26:57,863 - root - INFO - epoch: 1:
+2022-11-08 13:26:57,864 - root - INFO - epoch mean loss: 0.32600102063977476
+2022-11-08 13:26:57,864 - root - INFO - train acc: 0.9304425542406312, val acc: 0.5
+2022-11-08 13:26:57,864 - root - INFO - train auc: 0.9980985571480745, val auc: 0.9747420634920634
+2022-11-08 13:26:57,864 - root - INFO - train ap: 0.9981199785734506, val ap: 0.9792244203628774
+2022-11-08 13:26:57,917 - root - INFO - start 2 epoch
+2022-11-08 13:27:58,230 - root - INFO - epoch: 2:
+2022-11-08 13:27:58,230 - root - INFO - epoch mean loss: 0.32458731542888813
+2022-11-08 13:27:58,230 - root - INFO - train acc: 0.9404009978718986, val acc: 0.5
+2022-11-08 13:27:58,230 - root - INFO - train auc: 0.9968825120192307, val auc: 0.9330769659054098
+2022-11-08 13:27:58,230 - root - INFO - train ap: 0.9970471348942432, val ap: 0.9386935903305138
+2022-11-08 13:27:58,284 - root - INFO - start 3 epoch
+2022-11-08 13:28:58,701 - root - INFO - epoch: 3:
+2022-11-08 13:28:58,701 - root - INFO - epoch mean loss: 0.32043885598069377
+2022-11-08 13:28:58,701 - root - INFO - train acc: 0.9369395891726358, val acc: 0.5
+2022-11-08 13:28:58,701 - root - INFO - train auc: 0.9892399955313116, val auc: 0.9538789682539682
+2022-11-08 13:28:58,701 - root - INFO - train ap: 0.99155793755155, val ap: 0.9635715170455784
+2022-11-08 13:28:58,755 - root - INFO - start 4 epoch
+2022-11-08 13:29:59,139 - root - INFO - epoch: 4:
+2022-11-08 13:29:59,139 - root - INFO - epoch mean loss: 0.19471443103395836
+2022-11-08 13:29:59,139 - root - INFO - train acc: 0.9637573964497042, val acc: 0.5
+2022-11-08 13:29:59,140 - root - INFO - train auc: 0.9952717617418639, val auc: 0.9526785714285715
+2022-11-08 13:29:59,140 - root - INFO - train ap: 0.9958771120247759, val ap: 0.9651468718030694
+2022-11-08 13:29:59,140 - root - INFO - No improvment over 3 epochs, stop training
+2022-11-08 13:29:59,140 - root - INFO - Loading the best model at epoch 1
+2022-11-08 13:29:59,172 - root - INFO - Loaded the best model at epoch 1 for inference
+2022-11-08 13:30:04,265 - root - INFO - Test statistics: i all nodes -- acc: 0.5, auc: 0.9804381083023057, ap: 0.9854822343083808
+2022-11-08 13:30:04,630 - root - INFO - Test statistics: i new-new nodes -- acc: 0.5, auc: 0.8804076863092141, ap: 0.8665277777777778
+2022-11-08 13:30:09,356 - root - INFO - Test statistics: i new-old nodes -- acc: 0.5, auc: 0.9840195725595984, ap: 0.9782016036655212
+2022-11-08 13:30:09,356 - root - INFO - Saving TGR_Clique model ...
+2022-11-08 13:30:09,435 - root - INFO - TGR_Clique model saved
