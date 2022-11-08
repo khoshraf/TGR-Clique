@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is the reference PyTorch implementation of the paper:\
+This is the reference PyTorch implementation of the paper:
 * Temporal Graph Representation Learning via Maximal Cliques
 
 
@@ -19,9 +19,7 @@ tqdm==4.41.1
 numpy==1.16.4
 scikit_learn==0.22.1
 matploblib==3.3.1
-
 ```
-.
 
 
 
@@ -43,7 +41,7 @@ python main.py -d fb_msg --mode i --clq_file data/ml_fb_msg_train2_ind.cliques -
 
 
 ## Acknowledgement
-Our implementation adapts the code [here](snap.stanford.edu/caw/) as the code base and extensively adapts it to our purpose. We thank the authors for sharing their code.
+Our implementation adapts the code [here](https://snap.stanford.edu/caw/) as the code base and extensively adapts it to our purpose. We thank the authors for sharing their code.
 
 ## Cite us
 If you compare with, build on, or use aspects of the paper and/or code, please cite us:
