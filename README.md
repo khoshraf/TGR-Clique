@@ -41,7 +41,7 @@ python main.py -d fb_msg --mode i --clq_file data/ml_fb_msg_train2_ind.cliques -
 
 
 ## Acknowledgement
-Our implementation adapts the code [here](https://snap.stanford.edu/caw/) as the code base and extensively adapts it to our purpose. We thank the authors for sharing their code.
+Our implementation adapts the code [here](https://github.com/snap-stanford/CAW) as the code base and adapts it to our purpose. We thank the authors for sharing their code.
 
 ## Cite us
 If you compare with, build on, or use aspects of the paper and/or code, please cite us:
