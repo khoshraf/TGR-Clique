@@ -22,20 +22,20 @@ matploblib==3.3.1
 ```
 
 ## Maximal clique generation
-Maximal cliques of the training part of each dataset should be generated using the code provided in [here](https://github.com/darrenstrash/quick-cliques).
+Before running TGR-Clique on a dataset, maximal cliques of the training part of each dataset should be generated using the code provided in [here](https://github.com/darrenstrash/quick-cliques) and the output should be placed in the data directory.
 
-The output should be placed in the data directory. Two sample outputs for fb-messages dataset is at data/ml_fb_msg_train2.cliques and data/ml_fb_msg_train2_ind.cliques for transductive and inductive settings respectively.
+Two sample outputs for fb-messages dataset is at data/ml_fb_msg_train2.cliques and data/ml_fb_msg_train2_ind.cliques for transductive and inductive settings respectively.
 
 ## Running
 
 #### Examples:
 
-* To run **TGR-Clique** on fb-messages dataset in transductive training, sampling 10 length-2 walks for every node, with given maximal clique file:
+* To run **TGR-Clique** on fb-messages dataset in transductive link prediction, sampling 10 length-2 walks for every node, with the given maximal clique file:
 ```bash
 python main.py -d fb_msg --mode t --clq_file data/ml_fb_msg_train2.cliques --num_walk 10 --len_walk 2 
 ```
 
-* To run **TGR-Clique** on fb-messages dataset in inductive training, sampling 10 length-2 walks for every node, with the given maximal clique file:
+* To run **TGR-Clique** on fb-messages dataset in inductive link prediction, sampling 10 length-2 walks for every node, with the given maximal clique file:
 
 ```bash
 python main.py -d fb_msg --mode i --clq_file data/ml_fb_msg_train2_ind.cliques --num_walk 10 --len_walk 2 
