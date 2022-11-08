@@ -23,8 +23,9 @@ matploblib==3.3.1
 
 ## Maximal clique generation
 Maximal cliques of the training part of each dataset should be generated using the code provided in [here](https://github.com/darrenstrash/quick-cliques).
-The output should be placed in the data directory. Two sample outputs for fb-messages dataset is at data/ml_fb_msg_train2.cliques and data/ml_fb_msg_train2_ind.cliques for 
-transductive and inductive settings respectively.
+
+
+The output should be placed in the data directory. Two sample outputs for fb-messages dataset is at data/ml_fb_msg_train2.cliques and data/ml_fb_msg_train2_ind.cliques for transductive and inductive settings respectively.
 
 ## Running
 
